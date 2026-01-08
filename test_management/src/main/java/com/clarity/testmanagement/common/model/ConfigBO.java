@@ -7,7 +7,7 @@ import lombok.AllArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Config {
+public class ConfigBO {
     private boolean standard;
     private String identifier;
 }

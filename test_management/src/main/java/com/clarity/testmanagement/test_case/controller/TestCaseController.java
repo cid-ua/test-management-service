@@ -1,7 +1,8 @@
 package com.clarity.testmanagement.test_case.controller;
 
 import com.clarity.testmanagement.common.controller.BaseController;
-import com.clarity.testmanagement.test_case.model.dto.TestCaseDTO;
+import com.clarity.testmanagement.test_case.model.bo.TestCaseFeatureConfiguration;
+import com.clarity.testmanagement.test_case.model.dto.TestCaseFeatureConfigurationDTO;
 
-public interface TestCaseController extends BaseController<TestCaseDTO> {
+public interface TestCaseController extends BaseController<TestCaseFeatureConfiguration, TestCaseFeatureConfigurationDTO> {
 }

@@ -1,6 +1,6 @@
 package com.clarity.testmanagement.test_plan.model.bo;
 
-import com.clarity.testmanagement.common.model.ConfigBO;
+import com.clarity.testmanagement.common.model.Config;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -10,5 +10,5 @@ import lombok.ToString;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
-public class TestPlanBO extends ConfigBO {
+public class TestPlan extends Config {
 }

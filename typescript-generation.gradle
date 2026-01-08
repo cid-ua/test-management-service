@@ -65,10 +65,11 @@ def generateTypeScriptInterface(javaFile, className) {
     def content = javaFile.text
     
     // Skip if it's not a DTO class
-    if (!content.contains('extends ConfigDTO')) {
+    if (!content.contains('extends ConfigDTO') && !content.contains('extends FeatureConfigurationDTO')) {
         return ''
     }
     
+    // Remove DTO suffix for interface name
     def interfaceName = className.replace('DTO', '')
     def properties = []
     
@@ -89,9 +90,15 @@ def generateTypeScriptInterface(javaFile, className) {
         }
     }
     
-    // Add base properties from ConfigDTO
-    properties.add("  standard: boolean;")
-    properties.add("  identifier: string;")
+    // Add base properties from ConfigDTO or FeatureConfigurationDTO
+    if (content.contains('extends FeatureConfigurationDTO')) {
+        properties.add("  config: any;")
+        properties.add("  enabled: boolean;")
+        properties.add("  description: string;")
+    } else {
+        properties.add("  standard: boolean;")
+        properties.add("  identifier: string;")
+    }
     
     return """export interface ${interfaceName} {
 ${properties.join('\n')}

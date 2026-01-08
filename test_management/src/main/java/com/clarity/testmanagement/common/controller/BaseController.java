@@ -1,6 +1,7 @@
 package com.clarity.testmanagement.common.controller;
 
-import com.clarity.testmanagement.common.model.ConfigDTO;
+import com.clarity.testmanagement.common.model.FeatureConfiguration;
+import com.clarity.testmanagement.common.model.FeatureConfigurationDTO;
 
-public interface BaseController<T extends ConfigDTO> {
+public interface BaseController<F extends FeatureConfiguration<?>, T extends FeatureConfigurationDTO<?>> {
 }

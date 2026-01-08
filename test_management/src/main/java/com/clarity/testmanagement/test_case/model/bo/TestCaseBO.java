@@ -1,4 +1,4 @@
-package com.clarity.testmanagement.test_case.model;
+package com.clarity.testmanagement.test_case.model.bo;
 
 import com.clarity.testmanagement.common.model.ConfigBO;
 

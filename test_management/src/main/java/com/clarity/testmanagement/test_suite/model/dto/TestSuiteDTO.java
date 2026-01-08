@@ -1,4 +1,4 @@
-package com.clarity.testmanagement.test_suite.model;
+package com.clarity.testmanagement.test_suite.model.dto;
 
 import com.clarity.testmanagement.common.model.ConfigDTO;
 

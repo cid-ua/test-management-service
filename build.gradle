@@ -32,6 +32,9 @@ dependencies {
     // TypeScript generation dependencies
     implementation 'com.fasterxml.jackson.core:jackson-annotations:2.15.2'
     implementation 'javax.annotation:javax.annotation-api:1.3.2'
+    
+    // ModelMapper for automatic BO/DTO conversion
+    implementation 'org.modelmapper:modelmapper:3.2.0'
 }
 
 tasks.named('test') {

@@ -5,4 +5,14 @@ import com.clarity.testmanagement.test_suite.model.bo.TestSuiteFeatureConfigurat
 import com.clarity.testmanagement.test_suite.model.dto.TestSuiteFeatureConfigurationDTO;
 
 public interface TestSuiteFacade extends BaseFacade<TestSuiteFeatureConfiguration, TestSuiteFeatureConfigurationDTO> {
+    
+    @Override
+    default Class<?> getBOClass() {
+        return TestSuiteFeatureConfiguration.class;
+    }
+    
+    @Override
+    default Class<?> getDTOClass() {
+        return TestSuiteFeatureConfigurationDTO.class;
+    }
 }

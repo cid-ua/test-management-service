@@ -5,4 +5,14 @@ import com.clarity.testmanagement.test_plan.model.bo.TestPlanFeatureConfiguratio
 import com.clarity.testmanagement.test_plan.model.dto.TestPlanFeatureConfigurationDTO;
 
 public interface TestPlanFacade extends BaseFacade<TestPlanFeatureConfiguration, TestPlanFeatureConfigurationDTO> {
+    
+    @Override
+    default Class<?> getBOClass() {
+        return TestPlanFeatureConfiguration.class;
+    }
+    
+    @Override
+    default Class<?> getDTOClass() {
+        return TestPlanFeatureConfigurationDTO.class;
+    }
 }

@@ -4,5 +4,5 @@ import com.clarity.testmanagement.common.entity.BaseEntity;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface TestCaseEntity extends BaseEntity {
+public class TestCaseEntity implements BaseEntity {
 }

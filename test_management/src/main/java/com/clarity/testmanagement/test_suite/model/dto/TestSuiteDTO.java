@@ -1,6 +1,6 @@
 package com.clarity.testmanagement.test_suite.model.dto;
 
-import com.clarity.testmanagement.common.model.ConfigDTO;
+import com.clarity.testmanagement.common.model.BaseDTO;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -10,5 +10,5 @@ import lombok.ToString;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
-public class TestSuiteDTO extends ConfigDTO {
+public class TestSuiteDTO extends BaseDTO {
 }

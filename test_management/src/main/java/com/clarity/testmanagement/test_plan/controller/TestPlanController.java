@@ -1,8 +1,7 @@
 package com.clarity.testmanagement.test_plan.controller;
 
 import com.clarity.testmanagement.common.controller.BaseController;
-import com.clarity.testmanagement.test_plan.model.bo.TestPlanFeatureConfiguration;
-import com.clarity.testmanagement.test_plan.model.dto.TestPlanFeatureConfigurationDTO;
+import com.clarity.testmanagement.test_plan.model.dto.TestPlanDTO;
 
-public interface TestPlanController extends BaseController<TestPlanFeatureConfiguration, TestPlanFeatureConfigurationDTO> {
+public interface TestPlanController extends BaseController<TestPlanDTO> {
 }

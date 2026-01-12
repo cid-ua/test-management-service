@@ -4,11 +4,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class FeatureConfiguration<T extends ConfigBO> {
-    private T config;
-    private boolean enabled;
-    private String description;
+public class FeatureConfiguration<B extends BaseBO> {
+    private PageResult<B> pageResult;
+    private int featureId;
+    private String featureName;
+    private String featureDescription;
+    private String featureTitle;
+    private List<ValidationError> validationErrors;
 }

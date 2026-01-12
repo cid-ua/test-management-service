@@ -11,13 +11,6 @@ import org.modelmapper.convention.MatchingStrategies;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Generic type-safe converter for BO/DTO conversion.
- * Each feature should create its own converter extending this class.
- * 
- * @param <B> Business Object type extending BaseBO
- * @param <D> Data Transfer Object type extending BaseDTO
- */
 public abstract class BaseConverter<B extends BaseBO, D extends BaseDTO> {
 
     private final ModelMapper modelMapper;

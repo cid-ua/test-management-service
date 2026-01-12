@@ -77,7 +77,6 @@ public class ModelMapperConverter {
 
     /**
      * Get the configured ModelMapper instance for custom mappings
-     * Useful for advanced mapping scenarios or custom converters
      */
     public static ModelMapper getModelMapper() {
         return modelMapper;
